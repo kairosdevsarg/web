@@ -213,7 +213,7 @@ a {
 .service-card {
   min-height: 132px;
   border: 1px solid var(--border);
-  border-radius: 0 0 18px 18px;
+  border-radius: 18px 18px 18px 18px;
   overflow: hidden;
   background: rgba(242, 248, 241, .6);
   transition: .25s ease;
