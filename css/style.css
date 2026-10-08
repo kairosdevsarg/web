@@ -371,6 +371,28 @@ a {
   }
 }
 
+/* ESTILOS ADICIONALES PARA REDES SOCIALES */
+
+.team-socials {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 18px; /* Espacio debajo del párrafo descriptor */
+}
+
+.team-socials a {
+  color: rgba(226, 238, 231, 0.65); /* Un color suave integrado a la paleta de fondo */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.team-socials a:hover {
+  color: var(--aqua); /* Resalta con tu color Aqua al pasar el cursor */
+  transform: scale(1.15); /* Efecto leve de agrandamiento */
+}
+
 /* PORTFOLIO */
 .portfolio {
   padding: 90px 10%;
