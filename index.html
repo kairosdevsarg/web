@@ -245,5 +245,59 @@
       });
     });
   </script>
+  <!-- Chatbot flotante -->
+<div id="chatbot">
+  <button
+    id="chat-toggle"
+    type="button"
+    aria-label="Abrir asistente"
+    aria-expanded="false"
+  >
+    💬
+  </button>
+
+  <section id="chat-window" hidden aria-label="Asistente virtual">
+    <header class="chat-header">
+      <div>
+        <strong>Asistente Kairos</strong>
+        <small>Estamos para ayudarte</small>
+      </div>
+      <button id="chat-close" type="button" aria-label="Cerrar chat">
+        ✕
+      </button>
+    </header>
+
+    <div id="chat-messages" aria-live="polite">
+      <div class="bot-message">
+        ¡Hola! 👋 Soy el asistente virtual de Kairos.
+        ¿En qué puedo ayudarte?
+      </div>
+    </div>
+
+    <div class="chat-options">
+      <button type="button" data-question="servicios">
+        Nuestros servicios
+      </button>
+      <button type="button" data-question="contacto">
+        Contacto
+      </button>
+      <button type="button" data-question="horarios">
+        Horarios de atención
+      </button>
+    </div>
+
+    <form id="chat-form">
+      <input
+        id="chat-input"
+        type="text"
+        placeholder="Escribí tu consulta..."
+        aria-label="Tu consulta"
+        maxlength="500"
+        required
+      />
+      <button type="submit" aria-label="Enviar mensaje">➤</button>
+    </form>
+  </section>
+</div>
 </body>
 </html>
